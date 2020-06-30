@@ -28,6 +28,7 @@ namespace Codenation.Challenge.Controllers
             var companyidDTO = _mapper.Map<CompanyDTO>(companyid);
             return Ok(companyidDTO);
         }
+
         [HttpGet("api/company")]
         public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
         {

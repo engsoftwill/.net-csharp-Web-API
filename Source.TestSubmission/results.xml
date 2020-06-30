@@ -1,91 +1,134 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<testsuites time="4.743" tests="45" failures="19">
-  <testsuite id="0" name="Source.TestSubmission.dll" tests="45" failures="19" time="4.743">
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.6300000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\AccelerationControllerTest.cs:line 46</error>
+<testsuites time="5.087" tests="45" failures="12">
+  <testsuite id="0" name="Source.TestSubmission.dll" tests="45" failures="12" time="5.087">
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.6750000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0270000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0260000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0210000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0480000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Post" time="0.0420000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 3, accelerationId: 3, companyId: 3)" time="0.6310000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Candidate -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.Candidate -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.CandidateDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , Candidate , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CandidateController.Get(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 29
+   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 24</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0570000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\AccelerationControllerTest.cs:line 46</error>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 1, accelerationId: 1, companyId: 1)" time="0.0550000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Candidate -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.Candidate -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.CandidateDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , Candidate , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CandidateController.Get(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 29
+   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 24</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0240000" />
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0190000" />
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0120000" />
-    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Post" time="0.0340000" />
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 3, accelerationId: 3, companyId: 3)" time="0.5810000" />
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 1, accelerationId: 1, companyId: 1)" time="0.0180000" />
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 2, accelerationId: 2, companyId: 2)" time="0.0220000" />
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 3)" time="0.0330000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 2, accelerationId: 2, companyId: 2)" time="0.0450000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Candidate -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.Candidate -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.CandidateDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , Candidate , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CandidateController.Get(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 29
+   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(Int32 userId, Int32 accelerationId, Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 24</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0300000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.0460000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 3)" time="0.0300000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0250000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0290000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post" time="0.0360000">
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 3)" time="0.0400000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0290000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.0210000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 3)" time="0.0180000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0140000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0210000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post" time="0.0130000">
       <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Candidate -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Candidate -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , Candidate , AccelerationDTO , ResolutionContext )
    at lambda_method(Closure , Object , Object , ResolutionContext )
-   at Codenation.Challenge.Controllers.CandidateController.Post(CandidateDTO value) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 53
+   at Codenation.Challenge.Controllers.CandidateController.Post(CandidateDTO value) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 59
    at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post() in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 87</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 1, userId: 1)" time="0.6390000" />
-    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 3, userId: 3)" time="0.0240000" />
-    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 2, userId: 2)" time="0.0180000" />
-    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Post" time="0.0440000" />
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Post" time="0.5930000" />
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0370000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 46</error>
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 1, userId: 1)" time="0.6750000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 3, userId: 3)" time="0.0280000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 2, userId: 2)" time="0.0630000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Post" time="0.0340000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Post" time="0.6130000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0790000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Company -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Company -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CompanyController.cs:line 43
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 44
+----- Inner Stack Trace -----
+   at lambda_method(Closure , Company , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0300000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 46</error>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0380000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Company -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Company -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CompanyController.cs:line 43
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 44
+----- Inner Stack Trace -----
+   at lambda_method(Closure , Company , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 2)" time="0.0470000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 2)" time="0.0390000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Company -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Company -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CompanyController.cs:line 37
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , Company , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 3)" time="0.0260000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 3)" time="0.0280000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Company -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Company -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CompanyController.cs:line 37
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , Company , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 1)" time="0.0250000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 1)" time="0.0410000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Company -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Company -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CompanyController.cs:line 37
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , Company , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0190000" />
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0140000" />
-    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0240000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 2)" time="0.5700000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 1)" time="0.0120000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 3)" time="0.0140000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 2, accelerationId: 2)" time="0.0490000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 1, accelerationId: 1)" time="0.0170000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 3, accelerationId: 3)" time="0.0190000" />
-    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Post" time="0.0590000" />
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 1)" time="0.5810000" />
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 3)" time="0.0190000" />
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 2)" time="0.0230000" />
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 2)" time="0.0350000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0170000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0110000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 2)" time="0.5830000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 1)" time="0.0110000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 3)" time="0.0090000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 2, accelerationId: 2)" time="0.0670000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 1, accelerationId: 1)" time="0.0380000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 3, accelerationId: 3)" time="0.0470000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Post" time="0.0360000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 1)" time="0.6060000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 3)" time="0.0220000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 2)" time="0.0130000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 2)" time="0.0510000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.User, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.User -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.GetAll(String accelerationName, Nullable`1 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\UserController.cs:line 33
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , User , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 1)" time="0.0320000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 1)" time="0.0520000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.User, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.User -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.GetAll(String accelerationName, Nullable`1 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\UserController.cs:line 33
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , User , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 3)" time="0.0550000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 3)" time="0.0280000">
+      <error message="AutoMapper.AutoMapperMappingException : Error mapping types.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; List`1&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.User, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.AccelerationDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#xD;&#xA;---- AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.User -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.GetAll(String accelerationName, Nullable`1 companyId) in C:\Users\willi\codenation\csharp-9\Source\Controllers\UserController.cs:line 33
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 65
+----- Inner Stack Trace -----
+   at lambda_method(Closure , User , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )</error>
     </testcase>
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_OK_When_Post" time="0.0340000" />
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Velvet Grass&quot;)" time="0.0300000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(String accelerationName) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 46</error>
-    </testcase>
-    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Progesterone&quot;)" time="0.0280000">
-      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(String accelerationName) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 46</error>
-    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_OK_When_Post" time="0.0450000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Velvet Grass&quot;)" time="0.0390000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Progesterone&quot;)" time="0.0240000" />
   </testsuite>
 </testsuites>

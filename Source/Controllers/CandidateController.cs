@@ -26,7 +26,7 @@ namespace Codenation.Challenge.Controllers
         public ActionResult<CandidateDTO> Get(int userId, int accelerationId, int companyId )
         {
             var idscandidate = _service.FindById(userId, accelerationId, companyId);
-            var idscandidateDTO = _mapper.Map<List<CandidateDTO>>(idscandidate);
+            var idscandidateDTO = _mapper.Map<CandidateDTO>(idscandidate);
             return Ok(idscandidateDTO);
         }
         [HttpGet("api/candidate")]
