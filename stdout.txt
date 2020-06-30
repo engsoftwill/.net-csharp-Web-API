@@ -1,0 +1,13 @@
+Execu‡Æo de teste para C:\Users\willi\codenation\csharp-9\Source.TestSubmission\bin\Debug\netcoreapp2.2\Source.TestSubmission.dll(.NETCoreApp,Version=v2.2)
+Microsoft (R) Test Execution Command Line Tool Version 16.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+Results File: C:\Users\willi\codenation\csharp-9\Source.TestSubmission\results.xml
+
+Test Run Successful.
+Total tests: 45
+     Passed: 45
+ Total time: 3,2305 Seconds

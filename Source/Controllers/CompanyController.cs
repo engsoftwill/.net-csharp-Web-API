@@ -35,13 +35,13 @@ namespace Codenation.Challenge.Controllers
             if (accelerationId == null && userId != null)
             {
                 var idscompany = _service.FindByUserId(userId.GetValueOrDefault());
-                var idscompanyDTO = _mapper.Map<List<AccelerationDTO>>(idscompany);
+                var idscompanyDTO = _mapper.Map<List<CompanyDTO>>(idscompany);
                 return Ok(idscompanyDTO);
             }
             if (accelerationId != null && userId == null)
             {
                 var idscompany = _service.FindByAccelerationId(accelerationId.GetValueOrDefault());
-                var idscompanyDTO = _mapper.Map<List<AccelerationDTO>>(idscompany);
+                var idscompanyDTO = _mapper.Map<List<CompanyDTO>>(idscompany);
                 return Ok(idscompanyDTO);
             }
             else

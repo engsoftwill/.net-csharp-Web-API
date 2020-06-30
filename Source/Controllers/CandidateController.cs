@@ -56,7 +56,7 @@ namespace Codenation.Challenge.Controllers
             var candidate = _mapper.Map<Candidate>(value);
             _service.Save(candidate);
 
-            var candidateDTO = _mapper.Map<AccelerationDTO>(candidate);
+            var candidateDTO = _mapper.Map<CandidateDTO>(candidate);
             return Ok(candidateDTO);
         }
     }
