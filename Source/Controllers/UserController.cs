@@ -29,11 +29,15 @@ namespace Codenation.Challenge.Controllers
         {
             if (accelerationName == null && companyId != null)
             {
-                return _mapper.Map<List<UserDTO>>(_service.FindByCompanyId(companyId.GetValueOrDefault()));
+                var idsuser = _service.FindByCompanyId(companyId.GetValueOrDefault());
+                var idsuserDTO = _mapper.Map<AccelerationDTO>(idsuser);
+                return Ok(idsuserDTO);
             }
             if (accelerationName != null && companyId == null)
             {
-                return _mapper.Map<List<UserDTO>>(_service.FindByAccelerationName(accelerationName));
+                var idsuser = _service.FindByAccelerationName(accelerationName);
+                var idsuserDTO = _mapper.Map<AccelerationDTO>(idsuser);
+                return Ok(idsuserDTO);
             }
             else
             {
@@ -46,7 +50,9 @@ namespace Codenation.Challenge.Controllers
         [HttpGet("{id}")]
         public ActionResult<UserDTO> Get(int id)
         {
-            return Ok(_mapper.Map<UserDTO>(_service.FindById(id)));
+            var idsuser = _service.FindById(id);
+            var idsuserDTO = _mapper.Map<AccelerationDTO>(idsuser);
+            return Ok(idsuserDTO);
         }
 
         // POST api/user
