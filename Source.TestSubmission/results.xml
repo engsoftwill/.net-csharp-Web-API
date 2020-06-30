@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites time="4.743" tests="45" failures="19">
+  <testsuite id="0" name="Source.TestSubmission.dll" tests="45" failures="19" time="4.743">
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.6300000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\AccelerationControllerTest.cs:line 46</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0570000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\AccelerationControllerTest.cs:line 46</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0190000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0120000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Post" time="0.0340000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 3, accelerationId: 3, companyId: 3)" time="0.5810000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 1, accelerationId: 1, companyId: 1)" time="0.0180000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 2, accelerationId: 2, companyId: 2)" time="0.0220000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 3)" time="0.0330000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0300000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.0460000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 47</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 3)" time="0.0300000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0250000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0290000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 68</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post" time="0.0360000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;Candidate -&gt; AccelerationDTO&#xD;&#xA;Codenation.Challenge.Models.Candidate -&gt; Codenation.Challenge.DTOs.AccelerationDTO">   at lambda_method(Closure , Candidate , AccelerationDTO , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CandidateController.Post(CandidateDTO value) in C:\Users\willi\codenation\csharp-9\Source\Controllers\CandidateController.cs:line 53
+   at Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post() in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CandidateControllerTest.cs:line 87</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 1, userId: 1)" time="0.6390000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 3, userId: 3)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 2, userId: 2)" time="0.0180000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Post" time="0.0440000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Post" time="0.5930000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0370000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 46</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0300000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 46</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 2)" time="0.0470000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 3)" time="0.0260000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 1)" time="0.0250000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0190000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0140000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 2)" time="0.5700000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 1)" time="0.0120000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 3)" time="0.0140000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 2, accelerationId: 2)" time="0.0490000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 1, accelerationId: 1)" time="0.0170000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 3, accelerationId: 3)" time="0.0190000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Post" time="0.0590000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 1)" time="0.5810000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 3)" time="0.0190000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 2)" time="0.0230000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 2)" time="0.0350000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 1)" time="0.0320000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 3)" time="0.0550000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(Int32 companyId) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 67</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_OK_When_Post" time="0.0340000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Velvet Grass&quot;)" time="0.0300000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(String accelerationName) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 46</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Progesterone&quot;)" time="0.0280000">
+      <error message="Assert.IsType() Failure&#xD;&#xA;Expected: Microsoft.AspNetCore.Mvc.OkObjectResult&#xD;&#xA;Actual:   (null)">   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(String accelerationName) in C:\Users\willi\codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 46</error>
+    </testcase>
+  </testsuite>
+</testsuites>

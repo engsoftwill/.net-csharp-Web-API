@@ -16,7 +16,7 @@ namespace Codenation.Challenge.Controllers
         private readonly IChallengeService _service;
         private readonly IMapper _mapper;
 
-        public ChallengeController(ChallengeService service, IMapper mapper)
+        public ChallengeController(IChallengeService service, IMapper mapper)
         {
             _service = service;
             _mapper = mapper;
@@ -29,8 +29,9 @@ namespace Codenation.Challenge.Controllers
             {
                 ICollection<Models.Challenge> challenges;
                 challenges = _service.FindByAccelerationIdAndUserId(accelerationId.GetValueOrDefault(), userId.GetValueOrDefault());
+                var challengesDTO = _mapper.Map<List<ChallengeDTO>>(challenges);
 
-                return Ok(_mapper.Map<List<ChallengeDTO>>(challenges));
+                return Ok(challengesDTO);
             }
             else
             {
