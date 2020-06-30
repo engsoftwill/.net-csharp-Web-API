@@ -25,18 +25,24 @@ namespace Codenation.Challenge.Controllers
         [HttpGet("api/candidate/{userId}/{accelerationId}/{companyId}")]
         public ActionResult<CandidateDTO> Get(int userId, int accelerationId, int companyId )
         {
-            return Ok(_mapper.Map<CandidateDTO>(_service.FindById(userId, accelerationId, companyId)));
+            var idscandidate = _service.FindById(userId, accelerationId, companyId);
+            var idscandidateDTO = _mapper.Map<List<CandidateDTO>>(idscandidate);
+            return Ok(idscandidateDTO);
         }
         [HttpGet("api/candidate")]
         public ActionResult<IEnumerable<CandidateDTO>> GetAll(int? companyId = null, int? accelerationId = null)
         {
             if (companyId != null && accelerationId==null)
             {
-                return _mapper.Map<List<CandidateDTO>>(_service.FindByCompanyId(companyId.GetValueOrDefault()));
+                var allcandidates = _service.FindByCompanyId(companyId.GetValueOrDefault());
+                var allcandidatesDTO = _mapper.Map<List<CandidateDTO>>(allcandidates);
+                return Ok(allcandidatesDTO);
             }
             if (accelerationId != null && companyId == null)
             {
-                return _mapper.Map<List<CandidateDTO>>(_service.FindByAccelerationId(accelerationId.GetValueOrDefault()));
+                var allcandidates = _service.FindByAccelerationId(accelerationId.GetValueOrDefault());
+                var allcandidatesDTO = _mapper.Map<List<CandidateDTO>>(allcandidates);
+                return Ok(allcandidatesDTO);
             }
             else
             {
