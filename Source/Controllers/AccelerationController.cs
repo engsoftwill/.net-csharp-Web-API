@@ -15,27 +15,23 @@ namespace Codenation.Challenge.Controllers
     {
         IAccelerationService _service;
         IMapper _mapper;
-        public CompanyController(IAccelerationService service, IMapper mapper)
+        public AccelerationController(IAccelerationService service, IMapper mapper)
         {
             _service = service;
             _mapper = mapper;
         }
 
-        [HttpGet("api/Acceleration/{id}")]
-        public ActionResult<CompanyDTO> Get(int id)
+        [HttpGet("api/acceleration/{id}")]
+        public ActionResult<AccelerationDTO> Get(int id)
         {
-            return Ok(_mapper.Map<CompanyDTO>(_service.FindById(id)));
+            return Ok(_mapper.Map<AccelerationDTO>(_service.FindById(id)));
         }
-        [HttpGet("api/company")]
-        public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
+        [HttpGet("api/acceleration")]
+        public ActionResult<IEnumerable<AccelerationDTO>> GetAll(int? companyId = null)
         {
-            if (accelerationId == null && userId != null)
+            if (companyId != null)
             {
-                return _mapper.Map<List<CompanyDTO>>(_service.FindByUserId(userId.GetValueOrDefault()));
-            }
-            if (accelerationId != null && userId == null)
-            {
-                return _mapper.Map<List<CompanyDTO>>(_service.FindByAccelerationId(accelerationId.GetValueOrDefault()));
+                return _mapper.Map<List<AccelerationDTO>>(_service.FindByCompanyId(companyId.GetValueOrDefault()));
             }
             else
             {
@@ -43,14 +39,14 @@ namespace Codenation.Challenge.Controllers
             }
         }
 
-        [HttpPost("api/company")]
-        public ActionResult<UserDTO> Post([FromBody] UserDTO value)
+        [HttpPost("api/acceleration")]
+        public ActionResult<AccelerationDTO> Post([FromBody] AccelerationDTO value)
         {
-            var company = _mapper.Map<Company>(value);
-            _service.Save(company);
+            var acceleration = _mapper.Map<Acceleration>(value);
+            _service.Save(acceleration);
 
-            var companyDTO = _mapper.Map<CompanyDTO>(company);
-            return Ok(companyDTO);
+            var accelerationDTO = _mapper.Map<AccelerationDTO>(acceleration);
+            return Ok(accelerationDTO);
         }
 
     }
