@@ -22,7 +22,37 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet("api/company/{id}")]
+        public ActionResult<CompanyDTO> Get(int id)
+        {
+            return Ok(_mapper.Map<CompanyDTO>(_service.FindById(id)));
+        }
+        [HttpGet("api/company")]
+        public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
+        {
+            if (accelerationId == null && userId != null)
+            {
+                return _mapper.Map<List<CompanyDTO>>(_service.FindByUserId(userId.GetValueOrDefault()));
+            }
+            if (accelerationId != null && userId == null)
+            {
+                return _mapper.Map<List<CompanyDTO>>(_service.FindByAccelerationId(accelerationId.GetValueOrDefault()));
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        [HttpPost("api/company")]
+        public ActionResult<UserDTO> Post([FromBody] UserDTO value)
+        {
+            var company = _mapper.Map<Company>(value);
+            _service.Save(company);
+
+            var companyDTO = _mapper.Map<CompanyDTO>(company);
+            return Ok(companyDTO);
+        }
 
 
-}
+    }
 }
