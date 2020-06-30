@@ -24,18 +24,24 @@ namespace Codenation.Challenge.Controllers
         [HttpGet("api/company/{id}")]
         public ActionResult<CompanyDTO> Get(int id)
         {
-            return Ok(_mapper.Map<CompanyDTO>(_service.FindById(id)));
+            var companyid = _service.FindById(id);
+            var companyidDTO = _mapper.Map<CompanyDTO>(companyid);
+            return Ok(companyidDTO);
         }
         [HttpGet("api/company")]
         public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
         {
             if (accelerationId == null && userId != null)
             {
-                return _mapper.Map<List<CompanyDTO>>(_service.FindByUserId(userId.GetValueOrDefault()));
+                var idscompany = _service.FindByUserId(userId.GetValueOrDefault());
+                var idscompanyDTO = _mapper.Map<List<AccelerationDTO>>(idscompany);
+                return Ok(idscompanyDTO);
             }
             if (accelerationId != null && userId == null)
             {
-                return _mapper.Map<List<CompanyDTO>>(_service.FindByAccelerationId(accelerationId.GetValueOrDefault()));
+                var idscompany = _service.FindByAccelerationId(accelerationId.GetValueOrDefault());
+                var idscompanyDTO = _mapper.Map<List<AccelerationDTO>>(idscompany);
+                return Ok(idscompanyDTO);
             }
             else
             {
