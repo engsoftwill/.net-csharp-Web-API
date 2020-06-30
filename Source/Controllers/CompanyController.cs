@@ -13,8 +13,8 @@ namespace Codenation.Challenge.Controllers
     [ApiController]
     public class CompanyController : ControllerBase
     {
-        ICompanyService _service;
-        IMapper _mapper;
+        private readonly ICompanyService _service;
+        private readonly IMapper _mapper;
         public CompanyController(ICompanyService service, IMapper mapper)
         {
             _service = service;

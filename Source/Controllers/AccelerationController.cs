@@ -13,8 +13,8 @@ namespace Codenation.Challenge.Controllers
     [ApiController]
     public class AccelerationController : ControllerBase
     {
-        IAccelerationService _service;
-        IMapper _mapper;
+        private readonly IAccelerationService _service;
+        private readonly IMapper _mapper;
         public AccelerationController(IAccelerationService service, IMapper mapper)
         {
             _service = service;

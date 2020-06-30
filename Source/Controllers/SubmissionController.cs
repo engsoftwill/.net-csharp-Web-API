@@ -13,8 +13,9 @@ namespace Codenation.Challenge.Controllers
     [ApiController]
     public class SubmissionController : ControllerBase
     {
-        ISubmissionService _service;
-        IMapper _mapper;
+        private readonly ISubmissionService _service;
+        private readonly IMapper _mapper;
+
         public SubmissionController(SubmissionService service, IMapper mapper)
         {
             _service = service;
@@ -22,7 +23,7 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet("api/submission/higherScore")]
-        public ActionResult<SubmissionDTO> Get(int? challengeId = null)
+        public ActionResult<decimal> Get(int? challengeId = null)
         {
             if (challengeId != null)
                 return Ok(_mapper.Map<SubmissionDTO>(_service.FindHigherScoreByChallengeId(challengeId.GetValueOrDefault())));
@@ -34,7 +35,10 @@ namespace Codenation.Challenge.Controllers
         {
             if (challengeId != null && accelerationId != null)
             {
-                return _mapper.Map<List<SubmissionDTO>>(_service.FindByChallengeIdAndAccelerationId(challengeId.GetValueOrDefault(),accelerationId.GetValueOrDefault()));
+                ICollection<Submission> submissions;
+                submissions = _service.FindByChallengeIdAndAccelerationId(challengeId.GetValueOrDefault(), accelerationId.GetValueOrDefault());
+
+                return Ok(_mapper.Map<List<SubmissionDTO>>(submissions));
             }
             else
             {

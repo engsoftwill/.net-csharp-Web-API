@@ -14,8 +14,8 @@ namespace Codenation.Challenge.Controllers
     [ApiController]
     public class UserController : ControllerBase 
     {
-        IUserService _service;
-        IMapper _mapper;
+        private readonly IUserService _service;
+        private readonly IMapper _mapper;
 
         public UserController(IUserService service, IMapper mapper)
         {
