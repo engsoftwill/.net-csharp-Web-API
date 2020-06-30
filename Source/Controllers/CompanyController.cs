@@ -44,7 +44,7 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpPost("api/company")]
-        public ActionResult<UserDTO> Post([FromBody] UserDTO value)
+        public ActionResult<CompanyDTO> Post([FromBody] CompanyDTO value)
         {
             var company = _mapper.Map<Company>(value);
             _service.Save(company);
@@ -52,7 +52,5 @@ namespace Codenation.Challenge.Controllers
             var companyDTO = _mapper.Map<CompanyDTO>(company);
             return Ok(companyDTO);
         }
-
-
     }
 }

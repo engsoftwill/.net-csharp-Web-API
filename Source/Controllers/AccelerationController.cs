@@ -12,6 +12,46 @@ namespace Codenation.Challenge.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class AccelerationController : ControllerBase
-    {    
+    {
+        IAccelerationService _service;
+        IMapper _mapper;
+        public CompanyController(IAccelerationService service, IMapper mapper)
+        {
+            _service = service;
+            _mapper = mapper;
+        }
+
+        [HttpGet("api/Acceleration/{id}")]
+        public ActionResult<CompanyDTO> Get(int id)
+        {
+            return Ok(_mapper.Map<CompanyDTO>(_service.FindById(id)));
+        }
+        [HttpGet("api/company")]
+        public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
+        {
+            if (accelerationId == null && userId != null)
+            {
+                return _mapper.Map<List<CompanyDTO>>(_service.FindByUserId(userId.GetValueOrDefault()));
+            }
+            if (accelerationId != null && userId == null)
+            {
+                return _mapper.Map<List<CompanyDTO>>(_service.FindByAccelerationId(accelerationId.GetValueOrDefault()));
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        [HttpPost("api/company")]
+        public ActionResult<UserDTO> Post([FromBody] UserDTO value)
+        {
+            var company = _mapper.Map<Company>(value);
+            _service.Save(company);
+
+            var companyDTO = _mapper.Map<CompanyDTO>(company);
+            return Ok(companyDTO);
+        }
+
     }
 }
